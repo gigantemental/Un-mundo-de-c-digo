@@ -183,7 +183,7 @@ print (suma_potencias_de_2(6,15))
 3.9. Números perfectos y números amigos
 
 Escribir una función que devuelva la suma de todos los divisores de un número n, sin incluirlo.
-"""
+
 def suma_divisores (n):
     from math import sqrt
     suma = 1
@@ -191,7 +191,7 @@ def suma_divisores (n):
         if n % i == 0:
             suma+=i
     return suma
-"""
+
 print (suma_divisores (6))
 
 
@@ -207,6 +207,7 @@ def perfecto(m):
     
 perfecto(6)
 
+
 Usando la primera función, escribir una función que imprima las primeras m parejas de números(a,b), tales que la suma de los divisores de a es igual a b y la suma de los divisores de b es igual a a(es decir las primeras m parejas de números amigos).
 
 def perfectos(m):
@@ -221,11 +222,9 @@ def perfectos(m):
             
 perfectos(10)
 
-
 Proponer optimizaciones a las funciones anteriores para disminuir el tiempo de ejecución.
 
 3.10. Escribir un programa que le pida al usuario que ingrese una sucesión de números naturales (primero uno, luego otro, y así hasta que el usuario ingrese -1 como condición de salida). Al final, el programa debe imprimir cuántos números fueron ingresados, la suma total de los valores y el promedio.
-
 
 
 3.11. Escribir una función que reciba dos números como parámetros, y devuelva cuántos múltiplos del primero hay, que sean menores que el segundo.
@@ -233,6 +232,7 @@ Proponer optimizaciones a las funciones anteriores para disminuir el tiempo de e
 Implementarla utilizando un ciclo for, desde el primer número hasta el segundo.
 Implementarla utilizando un ciclo while, que multiplique el primer número hasta que sea mayor que el segundo.
 Comparar ambas implementaciones: ¿Cuál es más clara? ¿Cuál realiza menos operaciones?
+
 3.12. Escribir una función que reciba un número natural e imprima todos los números primos que hay hasta ese número.
 
 3.13. Escribir una función que reciba un dígito y un número natural, y decida numéricamente si el dígito se encuentra en la notación decimal del segundo.
@@ -240,8 +240,6 @@ Comparar ambas implementaciones: ¿Cuál es más clara? ¿Cuál realiza menos op
 3.14. Escribir una función que dada la cantidad de ejercicios de un examen, y el porcentaje necesario de ejercicios bien resueltos necesario para aprobar dicho examen, revise un grupo de examenes. Para ello, en cada paso debe preguntar la cantidad de ejercicios resueltos por el alumno, indicando con un valor centinela que no hay más examenes a revisar. Debe mostrar por pantalla el porcentaje correspondiente a la cantidad de ejercicios resueltos respecto a la cantidad de ejercicios del examen y una leyenda que indique si aprobó o no.
 
 3.15. Escribir una función que reciba por parámetro una dimensión n, e imprima la matriz identidad correspondiente a esa dimensión.
-"""
-
 
 def matrizIdentidad(m):
     for i in range(m):
@@ -255,7 +253,6 @@ def matrizIdentidad(m):
 
 matrizIdentidad (10)
 
-"""
 3.16. Escribir funciones que permitan encontrar:
 
 El máximo o mínimo de un polinomio de segundo grado (dados los coeficientes a, b y c), indicando si es un máximo o un mínimo.
